@@ -1,8 +1,7 @@
 import random
 
 score=0
-i=1
-while i<=5:
+for i in range(5):
     user_move=int(input('Enter your choice: 0 for scissors, 1 for paper, 2 for rock?'))
     choice=["scissors","paper","rock"]
     num = random.randint(0,2)
@@ -39,7 +38,6 @@ while i<=5:
 
     else:
         print("please select a valid choice.\n")
-
-    i += 1
+    print(f"you have {4-i} tries left.\n\n")
 
 print(f"You got a total score of {score}")

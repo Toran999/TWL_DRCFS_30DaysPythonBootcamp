@@ -31,10 +31,11 @@ def news_scraper(url:str) -> list:
     for article_title in articles:
         try:
             news.append(article_title.find_all('a')[0].text)
-        except Exception:   
+            news.append(article_title.find_all('a', href=True)[0]['href'])
+        except Exception as e:   
             try:
                 news.append(article_title.find_all('span')[0].text)
-            except Exception:
+            except Exception as e:
                 continue
     return news
 
