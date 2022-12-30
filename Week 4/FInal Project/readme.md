@@ -1,5 +1,5 @@
-# Welcome to week 4 of the bootcamp.
-I have created a program in c that simulates the famous Buffon Noodle method or 
+#Buffon's Needle Problem
+I have created a program in python that simulates the famous Buffon Noodle method or 
 Buffon needle method to approximate the value of PI, one of the most important Mathematical constant.
 In this experiment, Pi shows up in seemingly unusal place.
 
@@ -19,10 +19,10 @@ The matches you dropped will have random orientations and they can land anywhere
 So how do we calculate its probability??? Preety intense right?
 Don't panic because luckily some old folks from 18th century came up with a whole field of 
 mathematics known as geometric probability and 
-__________________________________________________________________________
-|                                                                         |                                                   
-| IT TURNS OUT THAT THE PROBABILITY OF NEEDLE LANDING ON LINE IS 2/PI !!! |
-|_________________________________________________________________________|
+## __________________________________________________________________________
+## |                                                                         |                                                   
+## | IT TURNS OUT THAT THE PROBABILITY OF NEEDLE LANDING ON LINE IS 2/PI !!! |
+## |_________________________________________________________________________|
 
 ISN'T IT INSANE??? HOW PI SHOWS UP IN UNIMAGINABLE PLACES???
 
@@ -56,7 +56,7 @@ So I just saved your 8 hours of manual tedious work under some few lines of code
 So let's discuss how will we simulate this whole experiment in python.
 
 1. So first of all,  dropping a needle from a height is completely random process as we don't know where will the needle land.
-   So for working with this probabilistic event we already have a perfect library in python named random. So we will import random in our program.
+   So for working with this probabilistic event we will import a library called random in our program. We will be working with some math functions so we will import math library as well.
 2. We define a variable named crossed whcih counts how many needles crossed the lines.
 3. User provides input on how many needles should be tossed or how many times should a needle be tossed and store it in          
     variable named total.
@@ -64,4 +64,28 @@ So let's discuss how will we simulate this whole experiment in python.
 5. we create a for loop for total number of lines that tosses the needle for total number of times.
 6. inside for loop we define a variable named head which is the position of the needle head when dropped on the grid from our     
     arbitary zero till one. zero and one are position where our two lines drawn on the ground are. so we take only two gridlines from the ground for simplification of the condition and allow our needle head to be between or on these lines.
-7. 
+7. we assign a random float to the position  (vertical distance from the zero line) of our head relative to the zero line. This 
+    acts as dropping of needles as both.
+    position of head of the needle after it is dropped and selecting a random number are both random process.
+8. We use the uniform method of random library to get this point as our needle head can lie in anywhere. So we need to have     
+    continuous values to select from.
+9. Theta gives the orientation of the needle with respect to our zero line on the grid. The needle can make any angle from 0 to 
+    360 degree (or 0 to 2π) with the grid lines. Since math library in python uses radian as unit of angle (and I don't want π to appear any where in my program ;) and luckily Sine function is continuous through all the value of theta ) We randomly choose through infinite values of theta (or very large value works as well) as angle to simulate the random orientation of needle after the drop.
+10. The round function allows our values of head and theta to round off and I round of these values to nearest 3 decimal places 
+    so that we will have fewer digits to work with.
+11. we define a variable named y that defines the vertical distance of tip of needle from its head position. to do this, we use 
+    sin() method from math library. As our length of needle is 1 unit (equal to the distance between two lines in the grid) and the hypotenuse(length of needle) times sin of the angle with horizontal gives the heigth of the triangle( or vertical distance between needle's head and tip in our case), the sin(theta) gives the vertical distance between tip and head of our needle. we store it in a variable named y.
+12. As the value of sin() can be both negative and positive we can have both positive or negative value of y.
+13. The sum of y and head gives the vertical position of tip relative to the zero line. the sum is stored in the variable named 
+    tip.
+14. if the tip is greater than or equal to one or the tip is less than or equal to zero our needle has crossed the line. This is 
+    because the head of needle lies between the zero and one line and the tip lying above the one line or below the zero line means it crossed either zero or one line. This will increment the value of crossed by 1.
+15. When the program has run for user defined (total) number of times our program calculates the 
+    probability(p)= (number of neeedles that crossed or touched the lines)/(total number of needles tossed)=crossed/total
+    and stores it in p.
+16. Then pi is given by
+        pi = 2/p
+17. Finally the program displays the value of pi approximated through this method.
+
+### Note: Do not expect to get a very good approximation of pi through this method. The more number of times you toss the needle, the more LIKELY you are to get better approximation. And running a iteration for large number of times requires very high computational power or longer time so this is the limitation of this method and this program as well. 
+## But it is always thrillful to get to see your favorite number in such an unexpected place. So embrace the beauty of pi through this program. Besides, This program can be helpful to show how simple yet powerful device the computer is. Furthermore, You may also have realized how useful scientific tools can the programs be.
