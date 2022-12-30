@@ -10,7 +10,7 @@ distance between the parallel lines drawn on  the ground.
 Now If you dropped the needle or match then what is the probability that the needle will cross the 
 lines that you drew?
 
-<img src="/src/final_project.jpg" width="100%" alt="experimental setup"/>
+<img src="/imgs/final_project.jpg" width="100%" alt="experimental setup"/>
 The matches you dropped will have random orientations and they can land anywhere on the grid.
 So how do we calculate its probability??? Preety intense right?
 Don't panic because luckily some old folks from 18th century came up with a whole field of 
