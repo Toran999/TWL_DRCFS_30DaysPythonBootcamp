@@ -8,12 +8,7 @@ Now consider a needle or noodle or match or whatever object having very small wi
 distance between the parallel lines drawn on  the ground. 
 
 Now If you dropped the needle or match then what is the probability that the needle will cross the 
-lines that you drew.
-
-__________________________________________
-___|_______________________________________
-_________/_________________________________
-______________\____________________________
+lines that you drew?
 
 The matches you dropped will have random orientations and they can land anywhere on the grid.
 So how do we calculate its probability??? Preety intense right?
