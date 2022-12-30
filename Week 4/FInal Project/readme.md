@@ -24,7 +24,7 @@ There is another remarkable theorem in mathematics called CENTRAL LIMIT THEOREM
 that says if we repeat an probabilistic experiment infinite number (many) times we 
 will get the total probability equal to the probability for each event to occur.
 
-<p align="center">Or</p></br>
+<p align="center">Or</p>
 Simply put, if we toss a coin for n number of time and get m number of head or tail then 
 m/n = 1/2 as n approaach to infinity. i.e. we will get almost equal no of head and tail on the long run.
 
@@ -47,6 +47,7 @@ simulate this whole process of dropping needles on a grid line in only 15 lines 
 
 So I just saved your 8 hours of manual tedious work under some few lines of codes.
 
+<p align="center"><img src="/imgs/final_proj1.png" width="100%" alt="experimental setup"/></p>
 So let's discuss how will we simulate this whole experiment in python.
 
 1. So first of all,  dropping a needle from a height is completely random process as we don't know where will the needle land.
