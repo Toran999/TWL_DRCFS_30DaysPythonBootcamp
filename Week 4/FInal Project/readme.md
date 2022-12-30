@@ -14,10 +14,8 @@ The matches you dropped will have random orientations and they can land anywhere
 So how do we calculate its probability??? Preety intense right?
 Don't panic because luckily some old folks from 18th century came up with a whole field of 
 mathematics known as geometric probability and 
-## __________________________________________________________________________
-## |                                                                         |                                                   
-## | IT TURNS OUT THAT THE PROBABILITY OF NEEDLE LANDING ON LINE IS 2/PI !!! |
-## |_________________________________________________________________________|
+                                                  
+### IT TURNS OUT THAT THE PROBABILITY OF NEEDLE LANDING ON LINE IS 2/PI !!! 
 
 ISN'T IT INSANE??? HOW PI SHOWS UP IN UNIMAGINABLE PLACES???
 
