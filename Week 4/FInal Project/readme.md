@@ -80,5 +80,9 @@ So let's discuss how will we simulate this whole experiment in python.
         pi = 2/p
 17. Finally the program displays the value of pi approximated through this method.
 
-### Note: Do not expect to get a very good approximation of pi through this method. The more number of times you toss the needle, the more LIKELY you are to get better approximation. And running a iteration for large number of times requires very high computational power or longer time so this is the limitation of this method and this program as well. 
-## But it is always thrillful to get to see your favorite number in such an unexpected place. So embrace the beauty of pi through this program. Besides, This program can be helpful to show how simple yet powerful device the computer is. Furthermore, You may also have realized how useful scientific tools can the programs be.
+####  Do not expect to get a very good approximation of pi through this method. The more number of times you toss the needle, the more LIKELY you are to get better approximation. And running a iteration for large number of times requires very high computational power or longer time so this is the limitation of this method and this program as well. 
+#### But it is always thrillful to get to see your favorite number in such an unexpected place. So embrace the beauty of pi through this program. Besides, This program can be helpful to show how simple yet powerful device the computer is. Furthermore, You may also have realized how useful scientific tools can the programs be.
+
+## Resource Materials And References
+[Pi and Buffon's Matches - Numberphile] (https://www.youtube.com/watch?v=sJVivjuMfWA) &nbsp
+[Buffon's needle problem](https://en.wikipedia.org/wiki/Buffon%27s_needle_problem)
