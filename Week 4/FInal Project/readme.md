@@ -24,7 +24,7 @@ There is another remarkable theorem in mathematics called CENTRAL LIMIT THEOREM
 that says if we repeat an probabilistic experiment infinite number (many) times we 
 will get the total probability equal to the probability for each event to occur.
 
-                                OR
+<p align="center">Or</p></br>
 Simply put, if we toss a coin for n number of time and get m number of head or tail then 
 m/n = 1/2 as n approaach to infinity. i.e. we will get almost equal no of head and tail on the long run.
 
@@ -74,11 +74,12 @@ So let's discuss how will we simulate this whole experiment in python.
     tip.
 14. if the tip is greater than or equal to one or the tip is less than or equal to zero our needle has crossed the line. This is 
     because the head of needle lies between the zero and one line and the tip lying above the one line or below the zero line means it crossed either zero or one line. This will increment the value of crossed by 1.
-15. When the program has run for user defined (total) number of times our program calculates the 
-    probability(p)= (number of neeedles that crossed or touched the lines)/(total number of needles tossed)=crossed/total
+15. When the program has run for user defined (total) number of times our program calculates the probability as
+            probability = (number of neeedles that crossed or touched the lines)/(total number of needles tossed) 
+                        =crossed/total
     and stores it in p.
 16. Then pi is given by
-        pi = 2/p
+                                        pi = 2/p
 17. Finally the program displays the value of pi approximated through this method.
 
 ####  Do not expect to get a very good approximation of pi through this method. The more number of times you toss the needle, the more LIKELY you are to get better approximation. And running a iteration for large number of times requires very high computational power or longer time so this is the limitation of this method and this program as well. 
