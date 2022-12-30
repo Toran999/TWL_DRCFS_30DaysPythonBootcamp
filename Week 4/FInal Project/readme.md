@@ -1,4 +1,4 @@
-# Buffon's Needle Problem
+<h1 align="center">Buffon's Needle Problem</h1>
 I have created a program in python that simulates the famous Buffon Noodle method or 
 Buffon needle method to approximate the value of PI, one of the most important Mathematical constant.
 In this experiment, Pi shows up in seemingly unusal place.
