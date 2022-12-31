@@ -24,4 +24,4 @@ for i in range(1, total+1):
             crossed+=1
 p= crossed/total
 pi=(2/p)
-print(f"The approximate value of pi predicted after {crossed} experiments is {pi}")
+print(f"The approximate value of pi predicted after {total} experiments is {pi}")
